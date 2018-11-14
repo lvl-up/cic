@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-echo Hello bootstrapping!
-cp -R /cic/bin/* /mnt/bin/
+mountpoint=$1
+echo BootStrapping CIC environment
+cp -R /cic/bin/* "${mountpoint}"
 rm -R /cic/bin/support/ruby

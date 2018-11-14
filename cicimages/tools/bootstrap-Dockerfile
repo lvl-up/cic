@@ -1,3 +1,0 @@
-FROM cicimages/tools:latest
-
-ENTRYPOINT /cic/bin/bootstrap
