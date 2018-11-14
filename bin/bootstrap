@@ -18,14 +18,14 @@ fi
 
 root_dir="${CURRENT_PATH}/.."
 cic_dir="${root_dir}/.cic"
-bin_dir="${root_dir}/bin"
+bin_dir="${root_dir}/bin/.ignore"
 mountpoint="/mnt/bin"
 
 mkdir -p "${bin_dir}"
 
 cd "${cic_dir}"
 docker-compose pull
-docker run  -it -v "${bin_dir}:${mountpoint}" --entrypoint /cic/bin/bootstrap cicimages/tools:0.7.14 "${mountpoint}"
+docker run  -it -v "${bin_dir}:${mountpoint}" --entrypoint /cic/bin/init cicimages/tools:0.7.14 "${mountpoint}"
 
 bash "${bin_dir}/setup"
 
