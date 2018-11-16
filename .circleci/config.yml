@@ -29,4 +29,4 @@ jobs:
 
 
       # build
-      - run: content="$(content requiring_update .)" && [[ "${content}" != "[]" ]] && echo "content out of date" && echo "${content}" && exit 1
+      - run: . bin/env && content="$(content requiring_update .)" && [[ "${content}" != "[]" ]] && echo "content out of date" && echo "${content}" && exit 1
