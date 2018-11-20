@@ -17,4 +17,4 @@ jobs:
       - run: echo 'export PATH="$(pwd)/bin:$PATH"' >> $BASH_ENV
 
 
-      - run: /bin/bash -c '. bin/env && content="$(content requiring_update .)" && [[ "${content}" != "[]\n" ]] && echo "content out of date" && echo "a${content}b" && exit 1'
+      - run: /bin/bash -c '. bin/env && content="$(content requiring_update .)" && [[ "${content}" != "[]" ]] && echo "content out of date" && echo "${content}" && exit 1'
