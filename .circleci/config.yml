@@ -16,12 +16,6 @@ jobs:
       - checkout
 #      - setup_remote_docker
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "Gemfile.lock" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
       - run: bin/bootstrap
       - run: echo 'export PATH="$(pwd)/bin:$PATH"' >> $BASH_ENV
       - run: echo 'machine 127.0.0.1' >> $HOME/.netrc && chmod 0600 $HOME/.netrc
