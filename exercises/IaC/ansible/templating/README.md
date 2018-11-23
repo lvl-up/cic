@@ -52,9 +52,7 @@ ok: [127.0.0.1] => {
 }
 
 PLAY RECAP *********************************************************************
-127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0   
-
-[ OK ] FINISHED - start container with: cic start cic_container-xxxxxxxxxxxxxxxx
+127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0
 ```
 
 In the above output we can see that "Hello World" was outputed.
@@ -99,9 +97,7 @@ ok: [127.0.0.1] => {
 }
 
 PLAY RECAP *********************************************************************
-127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0   
-
-[ OK ] FINISHED - start container with: cic start cic_container-xxxxxxxxxxxxxxxx
+127.0.0.1                  : ok=2    changed=0    unreachable=0    failed=0
 ```
 
 For information on using control statements within Jinja2 checkout the [documentation](http://jinja.pocoo.org/docs/2.10/templates/#list-of-control-structures)
@@ -235,17 +231,17 @@ The automated tests that accompany this exercise should also pass. Run `pytest` 
 ```
 ============================= test session starts ==============================
 platform linux -- Python 3.7.0, pytest-4.0.0, py-1.7.0, pluggy-0.8.0
-rootdir: /vols/pytest_1221, inifile:
+rootdir: /mnt/cic_working_dir/exercises/IaC/ansible/templating, inifile:
 plugins: testinfra-1.17.0
 collecting ... collected 1 item                                                               
 
 tests/test_rabbitmq_cluster.py .                                         [100%]
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.12 seconds ===========================
 ```
 
 **Note:** Don't forget to run `cic down` to shutdown the test infrastructure once you've finished the exercise.
 
   
 
-Revision: 53fd011328f5b5875f8782bc5dbe4cbf
+Revision: c09254afd4b64e7fff62fc8ba0d17cba

@@ -106,7 +106,7 @@ You should see the following. (The stack traces have been omitted):
 ============================= test session starts ==============================
 platform linux -- Python 3.7.0, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_10605, inifile: pytest.ini
+rootdir: /mnt/cic_working_dir/exercises/IaC/ansible/writing_playbooks, inifile: pytest.ini
 plugins: testinfra-1.17.0
 collecting ... collected 4 items                                                              
 
@@ -128,6 +128,7 @@ All of these fail because they are unable to connect to the server we specified 
 Let's create our first playbook using the the YAML we looked at earlier. Write the following YAML in to `ansible/webserver.yml`
 
 ```YAML
+
 
 ---
 # Playbook containing a single play
@@ -170,9 +171,7 @@ TASK [Start service apache2, if not running] ***********************************
 changed: [web1]
 
 PLAY RECAP *********************************************************************
-web1                       : ok=3    changed=2    unreachable=0    failed=0   
-
-[ OK ] FINISHED - start container with: cic start cic_container-xxxxxxxxxxxxxxxx
+web1                       : ok=3    changed=2    unreachable=0    failed=0
 ```
 
 
@@ -196,7 +195,7 @@ Run the test again with `pytest` and we see the from the output that the tests v
 ============================= test session starts ==============================
 platform linux -- Python 3.7.0, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_18487, inifile: pytest.ini
+rootdir: /mnt/cic_working_dir/exercises/IaC/ansible/writing_playbooks, inifile: pytest.ini
 plugins: testinfra-1.17.0
 collecting ... collected 4 items                                                              
 
@@ -251,7 +250,7 @@ You'll know that you've got it right when the acceptance tests pass :)
 ============================= test session starts ==============================
 platform linux -- Python 3.7.0, pytest-4.0.0, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_25665, inifile: pytest.ini
+rootdir: /mnt/cic_working_dir/exercises/IaC/ansible/writing_playbooks, inifile: pytest.ini
 plugins: testinfra-1.17.0
 collecting ... collected 4 items                                                              
 
@@ -282,4 +281,4 @@ You have just learned how to:
 
   
 
-Revision: 8c9c570d08aae7ecfc9318e0941e44d1
+Revision: eeee7be8b526dd3f49212a1028f10433

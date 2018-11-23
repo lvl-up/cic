@@ -159,9 +159,7 @@ changed: [jetty-server]
 
 PLAY RECAP *********************************************************************
 jetty-server               : ok=7    changed=6    unreachable=0    failed=0   
-tomcat-server              : ok=7    changed=6    unreachable=0    failed=0   
-
-[ OK ] FINISHED - start container with: cic start cic_container-xxxxxxxxxxxxxxxx
+tomcat-server              : ok=7    changed=6    unreachable=0    failed=0
 ```
 
 Visit [http://localhost:8080](http://localhost:8080) and [http://localhost:9090](http://localhost:8080) and you will see that both Jetty and Tomcat are both up and running.
@@ -350,9 +348,7 @@ changed: [jetty-server]
 
 PLAY RECAP *********************************************************************
 jetty-server               : ok=7    changed=6    unreachable=0    failed=0   
-tomcat-server              : ok=7    changed=6    unreachable=0    failed=0   
-
-[ OK ] FINISHED - start container with: cic start cic_container-xxxxxxxxxxxxxxxx
+tomcat-server              : ok=7    changed=6    unreachable=0    failed=0
 ```
 
 ## Now it's your turn
@@ -366,13 +362,13 @@ Write the new Role and implement it correctly within the Playbook to pass the su
 ```
 ============================= test session starts ==============================
 platform linux -- Python 3.7.0, pytest-4.0.0, py-1.7.0, pluggy-0.8.0
-rootdir: /vols/pytest_10659, inifile:
+rootdir: /mnt/cic_working_dir/exercises/IaC/ansible/roles, inifile:
 plugins: testinfra-1.17.0
 collecting ... collected 2 items                                                              
 
 tests/webservers_test.py ..                                              [100%]
 
-=========================== 2 passed in 1.17 seconds ===========================
+=========================== 2 passed in 1.57 seconds ===========================
 ```
 
 #### Helpful Hints
@@ -402,4 +398,4 @@ As Playbooks get larger, Ansible Roles are a good way of encapsulating and shari
 
   
 
-Revision: 13949ba9bff3f3794ae28c3e5c7b11cb
+Revision: c5deebc237ea60978a05dec84750cd73

@@ -47,6 +47,7 @@ Created: exercise_name/.cic/docker-compose.yml
 Created: exercise_name/.cic/after
 Created: exercise_name/.templates
 Created: exercise_name/.templates/README.md.erb
+Created: exercise_name/scaffold.yml
 [OK] Complete
 
 ```
@@ -97,7 +98,7 @@ To render a template in the `.templates` directory, navigate to the root of your
 #############################################################
 Rendering: ./.templates/README.md.erb
 
-[OK] Finished: /vols/ansible_4251/exercise_name/.templates/README.md.erb
+[OK] Finished: /tmp/d20181128-1-uucvku/exercise_name/.templates/README.md.erb
 
 ```
 
@@ -124,4 +125,4 @@ There will be times where you want to wait for something to happen before the `c
 
   
 
-Revision: 5ade8b0c864d36b5a1a1c1449c5f190e
+Revision: 076da63bb3508e42cead74236018e624

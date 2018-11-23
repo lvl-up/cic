@@ -2,7 +2,9 @@ CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export PATH="${CURRENT_PATH}/cic-commands:$PATH"
 
 root_dir="${CURRENT_PATH}/.."
-export CIC_IMAGE=$(cat "${root_dir}/.courseware-image")
-export CIC_IMAGE_VERSION=$(cat "${root_dir}/.courseware-version")
-export TRACKS_PATH="${TRACKS_PATH:-${root_dir}/tracks}"
-export EXERCISES_PATH="${EXERCISES_PATH:-${root_dir}/exercises}"
+export CIC_COURSEWARE_IMAGE=$(cat "${root_dir}/.courseware-image")
+export CIC_COURSEWARE_VERSION=$(cat "${root_dir}/.courseware-version")
+export TRACKS_PATH="${root_dir}/tracks"
+export EXERCISES_PATH="${root_dir}/exercises"
+export SCAFFOLD_PATH="${root_dir}/.cic/exercise_scaffold"
+export SCAFFOLD_STRUCTURE="${root_dir}/.cic/exercise_scaffold.yml"
