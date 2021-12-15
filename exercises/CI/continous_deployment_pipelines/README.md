@@ -108,15 +108,15 @@ This should output the following:
 executing build 1 at http://127.0.0.1:8080/builds/1 
 initializing
 waiting for docker to come up...
-Pulling busybox@sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812...
-sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812: Pulling from library/busybox
-90e01955edcd: Pulling fs layer
-90e01955edcd: Download complete
-90e01955edcd: Pull complete
-Digest: sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812
-Status: Downloaded newer image for busybox@sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812
+Pulling busybox@sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0...
+sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0: Pulling from library/busybox
+57c14dd66db0: Pulling fs layer
+57c14dd66db0: Download complete
+57c14dd66db0: Pull complete
+Digest: sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0
+Status: Downloaded newer image for busybox@sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0
 
-Successfully pulled busybox@sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812.
+Successfully pulled busybox@sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0.
 
 running echo hello world
 hello world
@@ -327,4 +327,4 @@ Have fun and good luck! :)
 
   
 
-Revision: c89deb6b6849efac51a688296c107598
+Revision: 4dff7f836b90ea3de2d500fa3f564b29

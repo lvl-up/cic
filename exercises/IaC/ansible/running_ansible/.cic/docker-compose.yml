@@ -8,6 +8,6 @@ services:
   web1:
     hostname: web1
     privileged: true
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     ports: ["8080:80"]
     command: /sbin/init

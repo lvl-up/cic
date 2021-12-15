@@ -37,6 +37,7 @@ The following playbook contains two plays. The first installs [Apache Tomcat](ht
   - name: install java
     apt:
       name: default-jdk
+      update_cache: yes
       state: latest
 
   - name: download tomcat
@@ -77,6 +78,7 @@ The following playbook contains two plays. The first installs [Apache Tomcat](ht
   - name: install java
     apt:
       name: default-jdk
+      update_cache: yes
       state: latest
 
   - name: download jetty
@@ -212,6 +214,7 @@ Starting with `vars`, move to the  `application-server` directory (`cd ansible/r
 - name: install java
   apt:
     name: default-jdk
+    update_cache: yes
     state: latest
 
 - name: download App Server
@@ -368,7 +371,7 @@ collecting ... collected 2 items
 
 tests/webservers_test.py ..                                              [100%]
 
-=========================== 2 passed in 1.57 seconds ===========================
+=========================== 2 passed in 1.29 seconds ===========================
 ```
 
 #### Helpful Hints
@@ -398,4 +401,4 @@ As Playbooks get larger, Ansible Roles are a good way of encapsulating and shari
 
   
 
-Revision: c5deebc237ea60978a05dec84750cd73
+Revision: ac115440eff118a3d8c3cec9975ac030

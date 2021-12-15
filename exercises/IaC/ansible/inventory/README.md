@@ -230,7 +230,7 @@ tests/ukservers_test.py:7
     assert host.file("/etc/issue").contains("Region:\s*uk")
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-===================== 3 passed, 2 warnings in 1.32 seconds =====================
+===================== 3 passed, 2 warnings in 1.35 seconds =====================
 ```
 
 ## Summary
@@ -244,4 +244,4 @@ In this tutorial and exercises, you should have seen that:
 
   
 
-Revision: a1271db3b809d0db742d774f9ff90f90
+Revision: caa3f5ea69d03c12192ca8dbb8a27432

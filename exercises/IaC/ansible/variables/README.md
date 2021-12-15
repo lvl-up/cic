@@ -291,13 +291,13 @@ Run `cic down` and then `cic up` to reset the test infrastructure and rerun ansi
 PLAY [all] *********************************************************************
 
 TASK [Gathering Facts] *********************************************************
-ok: [dev1]
-ok: [prod1]
 ok: [prod2]
+ok: [prod1]
+ok: [dev1]
 
 TASK [Set root prompt] *********************************************************
-changed: [prod1]
 changed: [prod2]
+changed: [prod1]
 changed: [dev1]
 
 PLAY RECAP *********************************************************************
@@ -347,7 +347,7 @@ tests/devservers_test.py::test_dev_app2_server PASSED                    [ 50%]
 tests/devservers_test.py::test_prod_app1_server PASSED                   [ 75%]
 tests/devservers_test.py::test_prod_app2_server PASSED                   [100%]
 
-=========================== 4 passed in 1.91 seconds ===========================
+=========================== 4 passed in 1.63 seconds ===========================
 ```
 
 ## Summary
@@ -362,4 +362,4 @@ Ansible provides a rich feature set that makes it easy to:
 
   
 
-Revision: 508dd999d39ea7b88c89ccc172fd3bb8
+Revision: b66f5c9524fab53960ca1f16577bfcda

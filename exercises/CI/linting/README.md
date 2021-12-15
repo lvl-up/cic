@@ -137,7 +137,7 @@ tests/test_calculator_add.py::test_adds_on_to_running_total PASSED       [ 50%]
 tests/test_calculator_add.py::test_minus_numbers PASSED                  [ 75%]
 tests/test_calculator_result.py::test_is_0_by_default PASSED             [100%]
 
-=========================== 4 passed in 0.18 seconds ===========================
+=========================== 4 passed in 0.11 seconds ===========================
 ```
 
 ## Summary
@@ -146,4 +146,4 @@ Linter's are an invaluable tool for digging out code smells. They are fast and u
 Linters are opinionated but can also be tuned to the needs of project, this gives the opportunity for team mates to agree on a set of principles and leave policing to the tool and their CI process.
   
 
-Revision: f2dbeff81b5b68845eb97cdbb4fa3b1d
+Revision: 229f7ec00cd764feef53a6df748913bd

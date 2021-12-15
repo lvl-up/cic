@@ -16,7 +16,7 @@ elif ! docker version > /dev/null 2>&1
 then
     say "$(error "Docker command not working!")"
     say "Ensure docker is installed and your user has the correct permissions. I.e. you're able to run: docker version"
-    say "Follow the instrcutions at  https://docs.docker.com/install/ to get Docker installed for your O/S"
+    say "Follow the instructions at  https://docs.docker.com/install/ to get Docker installed for your O/S"
     exit 1
 fi
 
@@ -28,7 +28,7 @@ source "${bin_dir}/env"
 #COURSEWARE_REPOSITORY="${CIC_IMAGE}" COURSEWARE_VERSION="${CIC_IMAGE_VERSION}" docker-compose pull
 
 mountpoint="/mnt/bin"
-docker run  -it -v "${tools_bin_dir}:${mountpoint}" --entrypoint /cic/bin/init ${CIC_IMAGE}:${CIC_IMAGE_VERSION} "${mountpoint}"
+docker run  -it -v "${tools_bin_dir}:${mountpoint}" --entrypoint /cic/bin/init ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION} "${mountpoint}"
 
 echo $(. "${tools_bin_dir}/setup" && init)
 

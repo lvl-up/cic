@@ -31,7 +31,6 @@ services:
     - CONCOURSE_MAIN_TEAM_ALLOW_ALL_USERS=true
     - CONCOURSE_WORKER_GARDEN_NETWORK
 
-
   git-server:
     image: cirocosta/gitserver-http
     restart: always
@@ -39,7 +38,7 @@ services:
     ports:
     - "3333:80"
     volumes:
-    - ${CIC_PWD}/resources/repositories:/var/lib/git
+    - ${CIC_PWD}/../resources/repositories:/var/lib/git
 
   docker-registry:
     image: registry:2

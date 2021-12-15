@@ -38,4 +38,4 @@ services:
     ports:
     - "3333:80"
     volumes:
-    - ${CIC_PWD}/resources/repositories:/var/lib/git
+    - ${CIC_PWD}/../resources/repositories:/var/lib/git

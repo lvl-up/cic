@@ -434,11 +434,11 @@ collecting ... collected 2 items
 
 tests/test_packages_are_installed.py ..                                  [100%]
 
-=========================== 2 passed in 1.47 seconds ===========================
+=========================== 2 passed in 1.52 seconds ===========================
 ```
 
 Good Luck!!
 
   
 
-Revision: 32ea7a9f3c41a5e65e118d4859b78baa
+Revision: 6b4b23b5f46f79bc401d4feaf40fa280

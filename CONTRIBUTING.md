@@ -98,7 +98,7 @@ To render a template in the `.templates` directory, navigate to the root of your
 #############################################################
 Rendering: ./.templates/README.md.erb
 
-[OK] Finished: /tmp/d20181128-1-uucvku/exercise_name/.templates/README.md.erb
+[OK] Finished: /tmp/d20190114-1-10akzn/exercise_name/.templates/README.md.erb
 
 ```
 
@@ -125,4 +125,4 @@ There will be times where you want to wait for something to happen before the `c
 
   
 
-Revision: 076da63bb3508e42cead74236018e624
+Revision: ca73b5e955056a0e1f760e96782cb3bd

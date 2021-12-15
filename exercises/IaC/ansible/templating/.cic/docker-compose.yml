@@ -8,7 +8,7 @@ services:
   rabbit1:
     hostname: rabbit1
     privileged: true
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     command: /sbin/init
     ports: ["15672:15672"]
 
@@ -16,18 +16,18 @@ services:
   rabbit2:
     hostname: rabbit2
     privileged: true
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     command: /sbin/init
 
   rabbit3:
     hostname: rabbit3
     privileged: true
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     command: /sbin/init
 
 
   newserver:
     hostname: new_server
     privileged: true
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     command: /sbin/init

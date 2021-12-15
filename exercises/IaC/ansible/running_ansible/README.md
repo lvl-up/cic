@@ -139,7 +139,7 @@ tests/apache_ansible_test.py::test_apache_installed PASSED               [ 33%]
 tests/apache_ansible_test.py::test_apache_is_enabled_as_service PASSED   [ 66%]
 tests/apache_ansible_test.py::test_apache_installed_is_running PASSED    [100%]
 
-=========================== 3 passed in 0.89 seconds ===========================
+=========================== 3 passed in 0.94 seconds ===========================
 ```
 
 In just a second or so the test has validated that:
@@ -154,4 +154,4 @@ Ansible is a great tool for configuring infrastructure. Baked in to its philosop
 
   
 
-Revision: ffaff498e437bdbf7b7d89f1329968c0
+Revision: cfd2854563da58877ace3f282f9218ed

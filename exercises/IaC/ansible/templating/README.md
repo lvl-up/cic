@@ -237,11 +237,11 @@ collecting ... collected 1 item
 
 tests/test_rabbitmq_cluster.py .                                         [100%]
 
-=========================== 1 passed in 0.12 seconds ===========================
+=========================== 1 passed in 0.10 seconds ===========================
 ```
 
 **Note:** Don't forget to run `cic down` to shutdown the test infrastructure once you've finished the exercise.
 
   
 
-Revision: c09254afd4b64e7fff62fc8ba0d17cba
+Revision: 459f4428d0afe18277f5f7dc5c85a290

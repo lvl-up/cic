@@ -6,14 +6,14 @@ networks:
 
 services:
   jetty-server:
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     privileged: true
     command: /sbin/init
     ports: ["8080:8080", "8888:80" ]
 
 
   tomcat-server:
-    image: ${CIC_COURSEWARE_IMAGE}:${CIC_COURSEWARE_VERSION}
+    image: cicimages/environments-ubuntu
     privileged: true
     command: /sbin/init
     ports: ["9090:8080", "9999:80" ]

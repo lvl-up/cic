@@ -32,9 +32,17 @@ In this exercise you will be working using a CI server called Concourse. We've d
 
 If all is well you should see the following:
 ```
-  waiting for Concourse to come up: 
+  mesg: ttyname failed: Inappropriate ioctl for device
+mesg: ttyname failed: Inappropriate ioctl for device
+Creating cic_concourse-db_1 ... 
+Creating git-server         ... 
+[2A[2KCreating cic_concourse-db_1 ... done[2BCreating cic_concourse_1    ... 
+[2A[2KCreating git-server         ... done[2B[1A[2KCreating cic_concourse_1    ... done[1Bmesg: ttyname failed: Inappropriate ioctl for device
 waiting for Concourse to come up: 
-waiting for Concourse to come up:
+waiting for Concourse to come up: 
+waiting for Concourse to come up: 
+Cloning into 'checkout'...
+remote: warning: unable to access '/root/.config/git/attributes': Permission denied        
 [OK] Environment cic'd up :)
 
 ```
@@ -152,4 +160,4 @@ Continuous Integration plays a vital role in ensuring that the software we right
 **Note:** Now that you've finished the exercise, remember to run `cic down` to shutdown your test infrastructure.
   
 
-Revision: c08eb3519398910c022ccd0625ea3520
+Revision: cbd5973b8da85d6ae7cbf91192914502

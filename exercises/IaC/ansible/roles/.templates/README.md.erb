@@ -41,6 +41,7 @@ playbook_yaml=<<YAML
   - name: install java
     apt:
       name: default-jdk
+      update_cache: yes
       state: latest
 
   - name: download tomcat
@@ -81,6 +82,7 @@ playbook_yaml=<<YAML
   - name: install java
     apt:
       name: default-jdk
+      update_cache: yes
       state: latest
 
   - name: download jetty
@@ -166,6 +168,7 @@ With the exceptioon of the `templates` and `files` directories, anything written
 - name: install java
   apt:
     name: default-jdk
+    update_cache: yes
     state: latest
 
 - name: download App Server
